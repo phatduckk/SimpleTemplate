@@ -156,7 +156,8 @@ class ExampleTemplate
      */
     public function inc($includeTemplatePath, $header = null, $footer = null)
     {
-        echo new Template($includeTemplatePath, $this->templateData, $header, $footer);
+        $class = get_class($this); // in case someone renames this and actually uses it
+        echo new $class($includeTemplatePath, $this->templateData, $header, $footer);
     }    
 }
 
