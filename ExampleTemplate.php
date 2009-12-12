@@ -6,7 +6,7 @@
  * @author Arin Sarkissian <arin@rspot.net>
  */
 
-class ExampleTemplate
+class SimpleTemplate
 {
     /**
      * Path to the "template" php file to render. 
